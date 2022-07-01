@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular" rel="stylesheet" />
+    <title>Movie Catalog</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#popup" class="header__logo">MovieApp</a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active">Films</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="favorite.html" class="nav__link">Favourite</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="movies">
+        <div class="container">
+            <div class="movies__search">
+                <form>
+                    <input class="search" type="text" placeholder="Поиск">
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+            <div class="movies__wrapper">
+                <div id="popup" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <a href="#" class="popup__close">X</a>
+                            <div class="popup__img">
+                                <img src="https://s.057.ua/section/afisha_event/upload/pers/16/img/afisha/000/000/282/f29029c48202a8371879f80769a81ab8613349abb0307_6135dcba7cc48.jpeg"
+                                    alt="">
+                                <img class="popup__favorite" src="images/heart-grey.svg" alt="">
+                            </div>
+                            <div class="popup__info">
+                                <h3 class="popup__title"></h3>
+                                <p class="popup__text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js" async></script>
+</body>
+
+</html>
